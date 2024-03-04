@@ -38,7 +38,7 @@ export default function BookList() {
 
   const viewBook = (id) => {
     axios
-      .get(`https://node56489-kitti.proen.app.ruk-com.cloud/books/${id}`)
+      .get(`https://node56489-kitti.proen.app.ruk-com.cloud/books${id}`)
       .then((response) => {
         setBook(response.data);
       });
